@@ -5,9 +5,7 @@
 </head>
 <body>
 
-<h2>SGPA Calculator</h2>
-
-<p>Enter percentage marks:</p>
+<h2>SGPA Calculator (Including Training)</h2>
 
 Maths (4): <input id="m"><br><br>
 OOP (4): <input id="o"><br><br>
@@ -15,6 +13,7 @@ DS (6): <input id="d"><br><br>
 CA (4): <input id="c"><br><br>
 DE (4): <input id="e"><br><br>
 STRW (1): <input id="s"><br><br>
+Training (1): <input id="t"><br><br>
 
 <button onclick="calc()">Calculate SGPA</button>
 
@@ -33,9 +32,9 @@ function gp(p){
 }
 
 function calc(){
-  let credits = [4,4,6,4,4,1];
+  let credits = [4,4,6,4,4,1,1];
   let marks = [
-    m.value, o.value, d.value, c.value, e.value, s.value
+    m.value, o.value, d.value, c.value, e.value, s.value, t.value
   ];
 
   let totalC = 0, total = 0;
